@@ -51,7 +51,7 @@ export const FacultiesData = [
     title: <p><div>DIRECTOR<br></br>RIT ROORKEE</div></p>,
   },
       {
-    role: 'ADVISORY',
+    role: 'TECHNICAL PROGRAM CHAIR',
     name: 'Dr. Deepak Arya',
     image: Deepak,
     title: <p><div>PROFESSOR<br></br>RIT ROORKEE</div></p>,
