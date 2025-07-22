@@ -19,7 +19,7 @@ import Yash from "../assets/faculties/Yash.png"
 
 
 
-const FacultiesData = [
+export const FacultiesData = [
     {
     role: 'PATRON',
       name: 'Mr. Naman Bansal',
@@ -51,7 +51,7 @@ const FacultiesData = [
     title: <p><div>DIRECTOR<br></br>RIT ROORKEE</div></p>,
   },
       {
-    role: 'TECHNICAL PROGRAM CHAIR',
+    role: 'ADVISORY',
     name: 'Dr. Deepak Arya',
     image: Deepak,
     title: <p><div>PROFESSOR<br></br>RIT ROORKEE</div></p>,
@@ -126,4 +126,29 @@ const FacultiesData = [
 
 ]
 
-export default FacultiesData;
+export const AdvisoryBoard = [
+  {
+    "name": "Dr Pramod Kumar",
+    "description": "SRHU, Jolly grant"
+  },
+  {
+    "name": "Dr Vibhor Sharma",
+    "description": "SRHU, Jollygrant"
+  },
+  {
+    "name": "Dr Kuldeep Yadav",
+    "description": "Government Polytechnic"
+  },
+  {
+    "name": "Dr Shuaib Khan",
+    "description": "Chitkara University"
+  },
+  {
+    "name": "Dr Rachit",
+    "description": "Sharda University, Agra"
+  },
+  {
+    "name": "Dr Sunita Rani",
+    "description": "RIT Roorkee"
+  }
+]
