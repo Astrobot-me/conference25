@@ -1,13 +1,13 @@
 import React from 'react';
 import {
   FaPhoneAlt, FaEnvelope, FaGlobe, FaMapMarkerAlt,
-  FaCalendarAlt,FaLinkedin, 
+  FaCalendarAlt, FaLinkedin,
 } from 'react-icons/fa';
 import Location from "../location/location";
 
 const ConferenceFooter = () => {
   const coordinators = [
-        {
+    {
       name: 'Ashwani Raj',
       linkedin: 'https://www.linkedin.com/in/ashwani-raj-57480028a',
       instagram: '#',
@@ -78,10 +78,16 @@ const ConferenceFooter = () => {
       color: '#e3f2fd',
       marginBottom: '10px',
     },
+    contactInfoParent:{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      marginBottom: '10px',
+      gap:"10px"
+    },
     contactInfo: {
       display: 'flex',
       alignItems: 'center',
-      marginBottom: '10px',
     },
     icon: {
       marginRight: '10px',
@@ -168,15 +174,15 @@ const ConferenceFooter = () => {
         {/* Column 3 - Student Coordinators */}
         <div style={styles.column} >
           <h3 style={styles.heading}>Student Coordinators<div style={styles.headingLine}></div>
-          <br></br>
-          <span style={{ 
-            marginTop:"0px", 
-            color: "#b8b8b8", 
-            fontSize:"15px", 
-            fontWeight:"lighter"
-          }}>( The Team )</span>
+            <br></br>
+            <span style={{
+              marginTop: "0px",
+              color: "#b8b8b8",
+              fontSize: "15px",
+              fontWeight: "lighter"
+            }}>( The Team )</span>
 
-           </h3>
+          </h3>
           {coordinators.map((coord, i) => (
             <div key={i} style={styles.coordinatorCard} >
               <div style={styles.coordinatorName}>{coord.name}</div>
@@ -188,15 +194,26 @@ const ConferenceFooter = () => {
             </div>
           ))}
         </div>
-                                                                                                             
+
         {/* Column 4 - Contact + Map */}
         <div style={styles.column}>
           <h3 style={styles.heading}>Contact & Connect<div style={styles.headingLine}></div></h3>
-          <div style={styles.contactInfo}><FaEnvelope style={styles.icon} /><p><a href="mailto:icetapci.2025@ritroorkee.com" style={styles.link}>icetapci.2025@ritroorkee.com</a>,<br></br>
-          <a href="mailto:dr.paragjain@ritroorkee.com" style={styles.link}>dr.paragjain@ritroorkee.com</a></p></div>
+          <div style={styles.contactInfoParent}>
+            <div style={styles.contactInfo}>
+              <FaEnvelope style={styles.icon} />
+              <a href="mailto:researchcell@ritroorkee.ac.in" style={styles.link}>researchcell@ritroorkee.ac.in</a>       
+            </div>
+            <div style={styles.contactInfo}>
+              <FaEnvelope style={styles.icon} />          
+              <a href="mailto:dr.paragjain@ritroorkee.com" style={styles.link}>
+                dr.paragjain@ritroorkee.com
+                </a>          
+            </div>
+          </div>
+          
           <div style={styles.contactInfo}><FaPhoneAlt style={styles.icon} /><span style={styles.paragraph}><p>+91 9837386973<br></br>+91 7417093980</p></span></div>
           <div style={styles.contactInfo}><FaGlobe style={styles.icon} /><a href="https://ritroorkee.com" style={styles.link} target="_blank" rel="noopener noreferrer">ritroorkee.com</a></div>
-   
+
           <div style={{ marginTop: '20px' }}>
             <Location compact={true} />
           </div>
@@ -213,7 +230,7 @@ const ConferenceFooter = () => {
             href="#team"
             style={{ textDecoration: "none", color: "whitesmoke" }}
           >
-            <span style={{fontSize: "15px", fontWeight:'bold'}}> Team </span>
+            <span style={{ fontSize: "15px", fontWeight: 'bold' }}> Team </span>
           </a>
         </div>
 
