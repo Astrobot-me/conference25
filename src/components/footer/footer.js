@@ -203,12 +203,12 @@ const ConferenceFooter = () => {
               <FaEnvelope style={styles.icon} />
               <a href="mailto:researchcell@ritroorkee.ac.in" style={styles.link}>researchcell@ritroorkee.ac.in</a>       
             </div>
-            <div style={styles.contactInfo}>
+            {/* <div style={styles.contactInfo}>
               <FaEnvelope style={styles.icon} />          
               <a href="mailto:dr.paragjain@ritroorkee.com" style={styles.link}>
                 dr.paragjain@ritroorkee.com
                 </a>          
-            </div>
+            </div> */}
           </div>
           
           <div style={styles.contactInfo}><FaPhoneAlt style={styles.icon} /><span style={styles.paragraph}><p>+91 9837386973<br></br>+91 7417093980</p></span></div>
