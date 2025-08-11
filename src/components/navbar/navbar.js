@@ -12,7 +12,11 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
+        {/* <div className='navbar-left'></div> */}
+        
         <div className="navbar-main">
+
+
           <ul className="nav-menu">
             <li className={`nav-item ${activeLink === 'Home' ? 'active' : ''}`}>
               <a href="#hero" onClick={(e) => {
@@ -70,8 +74,14 @@ const Navbar = () => {
               }}>Committee</a>
             </li>
           </ul>
+          
         </div>
+
+        {/* <div className='navbar-right'>
+           <img src='./rit-logo.png' alt='' className='navbar-right-img'></img>
+        </div> */}
       </div>
+       
     </nav>
   );
 };

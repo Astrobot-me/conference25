@@ -29,6 +29,7 @@
   padding-left: 20px; /* Reduced padding */
   display: flex;
   flex-direction: column;
+  align-items: end;
   height: 100%;
 }
 
@@ -178,9 +179,18 @@
   
   .hero-title {
     font-size: 1.4rem;
+    text-align: center;
+  }
+  .hero-subtitle {
+    /* font-size: 1.4rem; */
+    text-align: center;
   }
   
   .date {
     font-size: 1.3rem;
+  }
+
+  .hero-right{ 
+    align-items: center;
   }
 }

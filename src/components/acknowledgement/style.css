@@ -6,7 +6,10 @@
     padding: 20px;
 }
 .ack-main {
-  max-width: 90%;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 30px;
+  /* max-width: 90%; */
   padding: 20px;
   background-color: #fff;
   border-left: 6px solid #264087;
@@ -28,4 +31,15 @@
   color: #333;
   line-height: 1.7;
   text-align: justify;
+}
+
+.img-logo {
+    border-radius: 10px;
+}
+
+@media (max-width: 480px) {
+ .ack-main {
+  display: flex;
+  flex-direction: column-reverse;
+ }
 }

@@ -27,6 +27,10 @@ const Hero = () => {
         
         </div>
         <div className="hero-right">
+          <img src='./rit-logo2.png' alt='' style={{ 
+            width:"300px", 
+            height:"90px"
+           }}></img>
           <div className="hero-cta">
             <a href="/submit-abstract" className="cta-button">
               SUBMIT YOUR FULL LENGTH PAPER <span className="arrow">→</span>
@@ -42,6 +46,7 @@ const Hero = () => {
             <p className="location">Auditorium, Roorkee Institute of Technology</p>
             <p className="location">Roorkee, Uttarakhand, India - 247667</p>
           </div>
+           
         </div>
       </div>
     </section>

@@ -33,8 +33,12 @@ function Tracks() {
         </div>
       )}
 
-      <Acknowledgement/>
+
+        
     </div>
+    <Acknowledgement style={{ 
+          maxWidth :"80%"
+        }}/>
     </div>
   );
 }
