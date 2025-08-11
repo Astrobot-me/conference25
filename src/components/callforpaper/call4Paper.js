@@ -1,4 +1,5 @@
 import React from 'react';
+import Acknowledgement from '../acknowledgement/acknowledgement';
 
 const CallForPaper = () => {
   const handleSubmit = () => {
@@ -178,6 +179,7 @@ const CallForPaper = () => {
             </div>
           </div>
         </div>
+        <Acknowledgement/>
       </div>
     </div>
   );

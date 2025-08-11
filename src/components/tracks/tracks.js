@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./tracks.css";
 import Description from "./description";
+import Acknowledgement from "../acknowledgement/acknowledgement";
 
 function Tracks() {
   const [showAll, setShowAll] = useState(false);
@@ -31,6 +32,8 @@ function Tracks() {
           </button>
         </div>
       )}
+
+      <Acknowledgement/>
     </div>
     </div>
   );

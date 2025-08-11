@@ -1,5 +1,6 @@
 import React from "react";
 import "./Registration.css";
+import Acknowledgement from "../acknowledgement/acknowledgement";
 
 const Registration = () => {
   return (
@@ -51,6 +52,8 @@ const Registration = () => {
           </tbody>
         </table>
       </div>
+
+      <Acknowledgement/>
     </section>
     </div>
   );
