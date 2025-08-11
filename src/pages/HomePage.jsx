@@ -11,10 +11,12 @@ import Faculties from '../components/faculties/faculties'
 import Tourist from '../components/tourist/Tourist'
 import Acknowledgement from '../components/acknowledgement/acknowledgement'
 import ConferenceFooter from '../components/footer/footer'
+// import ScrollToHash from '../components/ScrollIntoView'
 
 const HomePage = () => {
   return (
      <div>
+      {/* <ScrollToHash/> */}
       <Navbar/>
       <Hero/>
       <AboutRit/>
