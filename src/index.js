@@ -13,13 +13,13 @@ const router = createBrowserRouter([
   element:<HomePage/>,
   errorElement:<ErrorPage/> ,
   children:[
-    {
-      path:"/acknowledgement",
-      element:<AcknoledgementPage/>
-    }
+    
   ]
 }, 
-
+{
+      path:"acknowledgement",
+      element:<AcknoledgementPage/>
+    }
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
